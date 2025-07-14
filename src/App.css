@@ -1,0 +1,15 @@
+* {
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+}
+html{
+  /* width: 100vw;
+  height: 100vh; */
+  background: #ebebeb;
+  /* overflow-x: hidden; */
+background: linear-gradient(90deg,rgba(235, 235, 235, 1) 0%, rgba(167, 189, 217, 1) 49%, rgba(255, 184, 130, 1) 99%);
+}
+.Pacificofont{
+   font-family: "Pacifico", cursive;
+}

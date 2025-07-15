@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div>
-<<<<<<< HEAD
-      <nav className="flex justify-between align-items-center font-bold text-lg p-4 fixed top-0 left-0 right-0 shadow-md z-50">
-=======
+
+     
+
       <nav className="flex  justify-between align-items-center font-bold text-lg p-4 fixed top-0 left-0 right-0 shadow-md z-50 bg-transparent backdrop-blur-lg bg-opacity-50">
->>>>>>> 8e7b949 (added legal pages)
+
         <ul>
           <li className="flex items-center justify-center">
             <img src={gifticon} alt="logo" width={50} height={40} />

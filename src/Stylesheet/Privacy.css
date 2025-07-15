@@ -1,0 +1,25 @@
+/* .privacy_page {
+    margin-top: 88px;
+} */
+.privacy_head svg{
+    position: relative;
+    z-index: 0;
+}
+.privacy_head h1{
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 40%;
+}
+.privacy_head small{
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 45%;
+}
+.privacy_left{
+    position: sticky;
+    top: 25%;
+   backdrop-filter: blur(8px);
+  
+}

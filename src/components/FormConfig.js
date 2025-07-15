@@ -1,4 +1,8 @@
-const formData=[
+
+
+
+export const formData=[
+
     {
         name:"age",
         lable:"Age ",

@@ -1,10 +1,11 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import { motion } from "motion/react";
 
 function Formsec() {
   return (
     <div className='mt-30 mb-30'>
-        <h1 className='text-center font-semibold text-lg'>Fillup The Form</h1>
+        <h1 className='text-center font-bold text-4xl Pacificofont mb-8'>Fillup The Form</h1>
        <form className="flex flex-col justify-center items-center w-100 mx-auto  ">
             <label className="w-full mb-2">Age:</label>
             <input
@@ -45,13 +46,19 @@ function Formsec() {
               <option>Singing</option>
               <option>Dancing</option>
             </select>
-
-            <button className="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 transition">
+ <motion.button
+             whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="w-50"
+            >
+                 <button className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition">
               <Link to='getgift'>
                Get Gifts
               </Link>
              
             </button>
+
+
+            </motion.button>
+           
           </form>
     </div>
   )

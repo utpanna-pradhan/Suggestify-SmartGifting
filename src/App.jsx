@@ -22,7 +22,7 @@ function App() {
 
      
 
-        <div className="pt-21">
+        <div className="pt-20">
              <Routes>
 
           <Route path="/" element={<Home />}></Route>

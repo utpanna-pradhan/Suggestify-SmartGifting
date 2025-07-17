@@ -1,0 +1,45 @@
+.about_left img {
+  position: relative;
+  z-index: 0;
+  width: 100vw;
+  /* height: 70vh; */
+}
+.why_Suggestify {
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+.about_Sub_head1 {
+  z-index: 1;
+  position: absolute;
+
+  top: 67%;
+  left: 2%;
+}
+.about_Sub_head {
+  z-index: 1;
+  position: absolute;
+
+  top: 77%;
+  left: 2%;
+}
+.getstarted_btn{
+     z-index: 1;
+  position: absolute;
+
+  top: 95%;
+  left: 2%;
+}
+.about_user{
+  backdrop-filter:opacity(20%);
+   z-index: 1;
+  position: absolute;
+
+top: 120%;
+  
+}
+/* .steps_left_card{
+  border: 1px solid black;
+  border-top-left-radius: 30px;
+} */

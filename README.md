@@ -1,22 +1,34 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-# Suggestify-SmartGifting
-=======
->>>>>>> 8e7b949 (added legal pages)
-# React + Vite
+# 🎁 Suggestify – Smart Gifting App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Suggestify is an intelligent gift suggestion platform that helps users discover personalized gift ideas based on the recipient’s age, relationship, occasion, interests, and more. Powered by AI and product APIs, it makes finding the perfect gift quick, fun, and hassle-free!
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-<<<<<<< HEAD
-=======
->>>>>>> c81c4bc (first commit)
->>>>>>> 8e7b949 (added legal pages)
+## 📸 Preview
+
+
+
+## 🧠 Key Features
+
+- 🎯 Smart gift suggestions based on:
+  - Age
+  - Relationship (e.g., friend, sibling, partner)
+  - Occasion (e.g., birthday, anniversary)
+  - Interests/hobbies
+  - Budget
+  - Gender
+- 🛒 Optional real products from Amazon/Flipkart APIs *(Coming Soon)*
+- 💡 AI-generated unique gift ideas
+- 💾 Save gift lists for later
+- 🔗 Share gift lists via link or email
+- 💫 Responsive and modern UI
+- 🌙 Optional dark mode *(Coming Soon)*
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Tailwind CSS, Framer Motion
+- **Backend (Upcoming):** Node.js, Express, MongoDB
+- **APIs:** OpenAI, Product APIs (Amazon/Flipkart)
+- **Deployment:** GitHub Pages

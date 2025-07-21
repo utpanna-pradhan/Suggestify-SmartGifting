@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { useState, useEffect } from "react";
+import GiftCard from "./GiftCard";
 
 function Formsec() {
   const [details, setDetails] = useState({
@@ -159,7 +160,9 @@ function Formsec() {
           <option value="Dancing">Dancing</option>
         </select>
         <div className="flex flex-row gap-4 form_btn mt-8 mb-8">
-          <motion.button
+         
+          <Link to='/getgift'>
+           <motion.button
             type="submit"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -167,6 +170,7 @@ function Formsec() {
           >
             Get Gifts
           </motion.button>
+          </Link>
           <motion.button
             onClick={handleclear}
             type="button"
@@ -185,6 +189,9 @@ function Formsec() {
           {details.interest}{" "}
         </div>
       )}
+
+
+      <GiftCard />
     </div>
   );
 }

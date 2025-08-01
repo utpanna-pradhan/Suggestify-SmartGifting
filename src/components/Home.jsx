@@ -2,63 +2,87 @@ import React from "react";
 import "../Stylesheet/Home.css";
 import { Link } from "react-router-dom";
 import Formsec from "./Formsec";
-import { motion } from "motion/react";
+import GetGift from "./GetGift";
+import { motion } from "framer-motion";
+import { Canvas } from "@react-three/fiber";
+import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
+import { Suspense } from "react";
+import giftModel from "../assets/gift.glb";
 
-
+function Model(props) {
+  const { scene } = useGLTF(giftModel);
+  return <primitive object={scene} {...props} />;
+}
 function Home() {
-   
   return (
     <div>
-
-
-
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#b30000"
+          fill="#C62828"
           fillOpacity="1"
           d="M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,138.7C672,128,768,128,864,138.7C960,149,1056,171,1152,197.3C1248,224,1344,256,1392,272L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
         ></path>
       </svg>
       <div className="mt-0">
         <div className="flex flex-col md:flex-row mb-4  mt-0 home_main_content">
-          <div className="flex flex-col pl-8 gap-5 justify-center md:w-2/3">
+          <div className="flex flex-col pl-8 gap-0 justify-center md:w-2/3">
             {/* <motion.path
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}
             > */}
-              <h1 className="text-9xl font-bold text-start Pacificofont font_red">
-                Suggestify Pro
-              </h1>
-            {/* </motion.path> */}
 
-            <h3 className=" text-3xl font-semibold  text-start pt-12">
-              “AI-Powered Gifting. Thoughtful. Personal. Effortless.”
+            <h1 className="text-6xl font-bold text-start Pacificofont  ">
+              Suggestify Pro
+            </h1>
+
+            {/* </motion.path> */}
+            <h2 className=" text-2xl text-gray-800 font-normal popinsfont text-start pt-12">
+              “Find the perfect gift—personalized by AI in seconds.”
+            </h2>
+            <h3 className="  text-gray-800 font-normal popinsfont text-start pt-4">
+              AI-Powered Gifting. Thoughtful. Personal. Effortless.
             </h3>
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="w-50 inline-block bg-red-600 text-white px-6 py-2 rounded-md text-lg hover:bg-red-700 transition"
-            ><Link to="/form">Scroll to Form</Link>
-              {/* <button
-                type="button"
-                className=" "
-              >
-                <Link to="/form">Scroll to Form</Link>
-              </button> */}
+              className="w-50 mt-8 popinsfont inline-block  px-6 py-2 rounded-md text-lg transition try_now_Btn"
+            >
+              <Link to="/form">Try Now</Link>
             </motion.button>
           </div>
 
           {/* Image Section */}
           <div className="md:w-1/3 flex justify-center items-center Home_img">
-            <img
+            {/* <img
               src="https://www.freeiconspng.com/uploads/gift-red-box-png-17.png"
               alt="gift"
               className="w-full max-w-xs"
-            />
+            /> */}
+            <div className="h-[400px] w-full relative mt-28">
+              <Canvas dpr={[1, 2]} shadows camera={{ fov: 45 }}>
+                <ambientLight intensity={1} />
+                <directionalLight
+                  position={[10, 10, 5]}
+                  intensity={1.5}
+                  castShadow
+                />
+                <PresentationControls
+                  speed={1.5}
+                  global
+                  zoom={0.5}
+                  polar={[-0.1, Math.PI / 4]}
+                >
+                  <Suspense fallback={null}>
+                    <Model scale={0.01} />
+                  </Suspense>
+                </PresentationControls>
+              </Canvas>
+            </div>
           </div>
         </div>
       </div>
       <Formsec />
+      <GetGift />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#b30000"

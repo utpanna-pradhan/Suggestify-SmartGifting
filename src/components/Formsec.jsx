@@ -79,7 +79,7 @@ function Formsec() {
     });
   };
   return (
-    <div className="mt-30 mb-30">
+    <div className="mt-0 mb-30">
       <h1 className="text-center font-bold text-4xl Pacificofont mb-8">
         Fillup The Form
       </h1>

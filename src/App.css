@@ -1,3 +1,11 @@
+:root{
+--offwhite:#F1FAEE;
+--vibrantred:#E63946;
+--teal:#A8DADC;
+--black:#22223B;
+--deepblue:#457B9D;
+
+}
 * {
   /* padding: 0;
   margin: 0; */
@@ -6,12 +14,18 @@
 html{
   /* width: 100vw;
   height: 100vh; */
-  background: #ebebeb;
+
+background: linear-gradient(90deg, #f6f6f6 0%, #e0ecf8 50%, #f9f1eb 100%);
   /* overflow-x: hidden; */
-background: linear-gradient(90deg,rgba(235, 235, 235, 1) 0%, rgba(167, 189, 217, 1) 49%, rgba(255, 184, 130, 1) 99%);
+/* background: linear-gradient(90deg,rgba(235, 235, 235, 1) 0%, rgba(167, 189, 217, 1) 49%, rgba(255, 184, 130, 1) 99%); */
 }
 .Pacificofont{
    font-family: "Pacifico", cursive;
 
 }
-
+.popinsfont{
+   font-family: "Poppins", sans-serif;
+}
+body{
+   font-family: "Poppins", sans-serif;
+}

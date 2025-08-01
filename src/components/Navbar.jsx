@@ -9,7 +9,7 @@ import { motion } from "motion/react"
 function Navbar() {
   return (
     <div>
-      <nav className="flex  justify-between items-center font-bold  p-4 fixed top-0 left-0 right-0 shadow-md z-50 bg-transparent backdrop-blur-lg bg-opacity-50">
+      <nav className="flex  justify-between items-center font-bold  p-4 fixed top-0 left-0 right-0 shadow-md z-50  backdrop-blur-lg bg-opacity-50">
         <ul>
           <li className="flex items-center justify-center">
             <img src="https://static.thenounproject.com/png/1265782-200.png" alt="logo" width={50} height={40} />
@@ -53,7 +53,7 @@ function Navbar() {
   whileTap={{ scale: 0.95 }}
   onHoverStart={() => console.log('hover started!')}
 >
-    <button className="bg-red-700 text-white px-4 py-2 rounded  Sign_btn">
+    <button className=" text-white px-4 py-2 rounded  Sign_btn">
               Sign up
             </button>
   </motion.button>

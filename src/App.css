@@ -1,24 +1,42 @@
-:root{
---offwhite:#F1FAEE;
---vibrantred:#E63946;
---teal:#A8DADC;
---black:#22223B;
---deepblue:#457B9D;
+/* 
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+} */
 
-}
-* {
-  /* padding: 0;
-  margin: 0; */
-  box-sizing: border-box;
-}
-html{
-  /* width: 100vw;
-  height: 100vh; */
 
-background: linear-gradient(90deg, #f6f6f6 0%, #e0ecf8 50%, #f9f1eb 100%);
-  /* overflow-x: hidden; */
-/* background: linear-gradient(90deg,rgba(235, 235, 235, 1) 0%, rgba(167, 189, 217, 1) 49%, rgba(255, 184, 130, 1) 99%); */
+html, body {
+ width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+body{
+   font-family: "Poppins", sans-serif;
+   
+    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+   color: #514e52;
+}
+.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+html {
+  background: linear-gradient(
+    90deg,
+    #f6f6f6 0%,
+    #e0ecf8 50%,
+    #f9f1eb 100%
+  );
+}
+
 .Pacificofont{
    font-family: "Pacifico", cursive;
 
@@ -26,6 +44,16 @@ background: linear-gradient(90deg, #f6f6f6 0%, #e0ecf8 50%, #f9f1eb 100%);
 .popinsfont{
    font-family: "Poppins", sans-serif;
 }
-body{
-   font-family: "Poppins", sans-serif;
+.headfont{
+  font-family:sans-serif;
+}
+
+.mainHeadColor{
+   color: #413F42;
+}
+.subHeadColor{
+   color: #514e52;
+}
+.smallHeadColor{
+   color: #6c6b6d;
 }

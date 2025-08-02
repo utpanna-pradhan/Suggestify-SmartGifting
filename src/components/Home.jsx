@@ -16,7 +16,7 @@ function Model(props) {
 function Home() {
   return (
     <div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="-mt-20">
         <path
           fill="#C62828"
           fillOpacity="1"
@@ -24,41 +24,32 @@ function Home() {
         ></path>
       </svg>
       <div className="mt-0">
-        <div className="flex flex-col md:flex-row mb-4  mt-0 home_main_content">
-          <div className="flex flex-col pl-8 gap-0 justify-center md:w-2/3">
-            {/* <motion.path
-              initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-            > */}
-
-            <h1 className="text-6xl font-bold text-start Pacificofont  ">
+        <div className="flex flex-col md:flex-row mb-4  mt-0 home_main_content flex-wrap">
+          <div className="flex flex-col px-4 md:px-8 md:pl-0 gap-0 justify-center md:w-2/3">
+           
+            <h1 className="text-4xl md:text-6xl font-bold text-center md:text-start mainHeadColor  headfont heading">
               Suggestify Pro
             </h1>
 
-            {/* </motion.path> */}
-            <h2 className=" text-2xl text-gray-800 font-normal popinsfont text-start pt-12">
+           
+            <h2 className="text-lg md:text-2xl subHeadColor font-normal popinsfont text-center md:text-start pt-6 md:pt-12">
               “Find the perfect gift—personalized by AI in seconds.”
             </h2>
-            <h3 className="  text-gray-800 font-normal popinsfont text-start pt-4">
+            <h3 className="  smallHeadColor font-normal popinsfont text-center md:text-start pt-2 md:pt-4">
               AI-Powered Gifting. Thoughtful. Personal. Effortless.
             </h3>
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="w-50 mt-8 popinsfont inline-block  px-6 py-2 rounded-md text-lg transition try_now_Btn"
+              className="max-w-[200px] mx-auto md:mx-0 w-full mt-8 popinsfont inline-block px-6 py-2 rounded-md text-xl font-medium transition try_now_Btn"
             >
               <Link to="/form">Try Now</Link>
             </motion.button>
           </div>
 
           {/* Image Section */}
-          <div className="md:w-1/3 flex justify-center items-center Home_img">
-            {/* <img
-              src="https://www.freeiconspng.com/uploads/gift-red-box-png-17.png"
-              alt="gift"
-              className="w-full max-w-xs"
-            /> */}
-            <div className="h-[400px] w-full relative mt-28">
+          <div className="md:w-1/3 flex justify-center items-center ">
+            <div className="h-[300px] md:h-[450px] w-[90%] mx-auto relative mt-16 md:mt-20">
               <Canvas dpr={[1, 2]} shadows camera={{ fov: 45 }}>
                 <ambientLight intensity={1} />
                 <directionalLight
@@ -70,7 +61,7 @@ function Home() {
                   speed={1.5}
                   global
                   zoom={0.5}
-                  polar={[-0.1, Math.PI / 4]}
+                  polar={[Math.PI / 3, Math.PI / 2]}
                 >
                   <Suspense fallback={null}>
                     <Model scale={0.01} />

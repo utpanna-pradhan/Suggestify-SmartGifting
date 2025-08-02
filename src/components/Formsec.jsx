@@ -79,12 +79,12 @@ function Formsec() {
     });
   };
   return (
-    <div className="mt-0 mb-30">
-      <h1 className="text-center font-bold text-4xl Pacificofont mb-8">
+    <div className="mt-0 mb-30  ">
+      <h1 className="text-center font-bold text-4xl headfont mb-8 mainHeadColor">
         Fillup The Form
       </h1>
       <form
-        className="flex flex-col justify-center items-center w-100 mx-auto  "
+        className="flex flex-col justify-center items-center max-w-[600px] px-4 md:mx-auto bg-gray-50 "
         onSubmit={handleSubmit}
       >
         <label className="w-full mb-2">Age:</label>
